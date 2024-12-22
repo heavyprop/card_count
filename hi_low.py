@@ -51,20 +51,24 @@ class Deck:
     def print_true_count(self, true_count):
         
         if true_count > 3:
-            print("!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!")
+            print()
             print(f"!!!! True count is {true_count}, BET BIG !!!!")
-            print("!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!")
+            print()
         
         elif true_count == 3:
+            print()
             print(f"!!!! True count is {true_count}, INCREASE BET !!!!")
+            print()
 
         elif true_count == 2:
+            print()
             print(f"True count is {true_count}, good! !!!!")
+            print()
         
         else:
-            print("_____________________________________________________")
+            print()
             print(f"Pick what you want to do? true count is: {true_count}")
-            print("_____________________________________________________")
+            print()
 
 
 if __name__ == "__main__":

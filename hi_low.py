@@ -46,7 +46,7 @@ class Deck:
     def get_true_count(self):
         
         true_count = math.ceil(self.count / self.num_decks)
-        print_true_count(true_count)
+        self.print_true_count(true_count)
         
     def print_true_count(true_count):
         

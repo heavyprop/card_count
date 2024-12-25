@@ -4,13 +4,20 @@ import time
 
 # reason we have a card object is if we want to store more information about the card later...
 class Card:
+    
     def __init__(self, value):
+        valid_cards = ['2', '3', '4', '5', '6', '7', '8', '9', '10', 'J', 'Q', 'K', 'A']
+        
+        if value not in valid_cards:
+            print(f"Invalid card value: {value}. Must be one of {valid_cards}")
+
         self.value = value
 
     def __repr__(self):
         return f"{self.value}"
 
 class Deck:
+    
     def __init__(self, num_decks):
         self.count = 0
         self.cards = []
@@ -87,6 +94,10 @@ if __name__ == "__main__":
         
         if card == "stop":
             running = False
+
+        if card == "help":
+            deck1.print_deck()
+        
         deck1.add_to_deck(Card(f"{card}"))
 
 
